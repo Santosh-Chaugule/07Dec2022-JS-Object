@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecture 54 - How many ways to access property of JS Object.</title>
+  </head>
+  <style>
+    /* CSS write here */
+  </style>
+  <script>
+    // this is for the JS code.
+  </script>
+  <body>
+    <!-- This is for the HTML code  -->
+    <h1>JS DATA Types</h1>
+    <ul>
+      <li>JS Object</li>
+    </ul>
+    <h1 class="mystudent3"></h1>
+    <script src="script.js"></script>
+    <script>
+      // this is for the JS code.
+      var student1 = {
+        //1. property:value
+        //2.
+        name: "Yogesh",
+        surname: "Gaikwad",
+      };
+      let student2 = {
+        //1. property:value
+        //2.
+        name: "Onkar",
+        surname: "Kadam",
+      };
+      const student3 = {
+        name: "Shekhar",
+        surname: "Shinde",
+      };
+      const student4 = {
+        //property:value
+        name: "Santosh",
+        surname: "Chaugule",
+      };
+      //1. ObjectNAme.property
+      //2.ObjectName["property"]
+      //3.ObjectName["expression"]
+    </script>
+    <script>
+      //how many ways I can display the Output
+      //1
+      console.log(student1.name + " " + student1.surname);
+
+      //2.ObjectName["property"]
+      window.alert(student2["name"] + " " + student2["surname"]);
+
+      //3.element.innerHTML
+      let n = "name";
+      let s = "surname";
+      document.querySelector("h1.mystudent3").innerHTML =
+        student3[n] + ` ` + student3[s];
+      //4. document.write()
+      document.write(
+        "<strong>" + student4["name"] + " " + student4["surname"] + "</strong>"
+      );
+
+      //How to run JS code
+      //1. Inside browser
+      //2. Outside browser
+      // terminal+node+file path
+    </script>
+  </body>
+</html>
